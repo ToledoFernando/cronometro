@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: #000;
+}
+
+form{
+    margin: auto;
+    color: #fff;
+    width: 200px;
+    border: 4px dashed rgb(197, 19, 19);
+    margin-top: 10%;
+    animation-name: xd;
+    animation-duration: 1s;
+    text-align: center;
+    height: 130px;
+}
+@keyframes xd{
+    0%{
+        margin-top: -100px;
+        opacity: 0%;
+    }
+    60%{
+        margin-top: 11%;
+
+    }
+    100%{
+        margin-top: 10%;
+        opacity: 100%;
+    }
+}
+
+form label{
+    font-size: 40px;
+}
+
+#iniciar, #detener{
+    background-color: #000;
+    color: rgb(206, 8, 8);
+    border: 1px solid rgb(206, 8, 8);
+    width: 80px;
+    font-size: 20px;
+    margin-right: 3px;
+}
+
+#reiniciar {
+    background-color: rgb(206, 8, 8);
+    color: #000;
+    border: 0px;
+    width: 85%;
+    margin-top: 10px;
+    font-size: 20px;
+}
+#iniciar{
+    opacity: 0%;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    animation-name: boton;
+    animation-duration: 0.5s;
+}
+#detener{
+    opacity: 0%;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    animation-name: boton;
+    animation-duration: 0.5s;
+}
+#reiniciar{
+    opacity: 0%;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    animation-name: boton;
+    animation-duration: 0.5s;
+}
+@keyframes boton {
+    0%{
+        transform: scale(0);
+        opacity: 0%;
+    }
+    70%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+#iniciar, #detener, #reiniciar{
+    margin-top: 10px;
+}
+
+#yo{
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 700;
+    animation-fill-mode: forwards;
+    animation-name: yo;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    opacity: 0%;
+
+}
+
+@keyframes yo{
+    0%{
+        opacity: 0%;
+        margin-top: 100px;
+    }
+    100%{
+        margin-top: 10px;
+        opacity: 100%;
+    }
+}
